@@ -1,4 +1,4 @@
-// module.exports = {      这个是把px自动转换成vw的
+// module.exports = {     // 这个是把px自动转换成vw的
 //     plugins: {
 //         "autoprefixer": {},
 //         'postcss-px-to-viewport': {

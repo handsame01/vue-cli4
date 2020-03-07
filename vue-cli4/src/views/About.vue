@@ -33,8 +33,8 @@ export default {
 </script>
 <style lang="less" scoped>
   .about{
-    width: 320px;
-    height: 20px;
+    width: 100vw;
+    height: 2rem;
     h1{
       color: red;
     }
