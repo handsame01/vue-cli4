@@ -8,7 +8,8 @@ axios.defaults.baseURL = HOST;
 window.axios = axios;
 // window.HOST = HOST;
 Vue.config.productionTip = false
-window.EvnetBus = new Vue()
+// var EventBus=window.EventBus
+// console.log(EventBus)
 new Vue({
   router,
   store,
@@ -17,6 +18,7 @@ new Vue({
 router.beforeEach((to, from, next) => {
   next()
 })
+window.EventBus = new Vue();
 window.onresize = () => {
   console.log('改变了屏幕尺寸')
   window.Size = document.getElementsByTagName('html')[0].style.fontSize

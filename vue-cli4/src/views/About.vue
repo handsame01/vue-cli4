@@ -18,11 +18,11 @@ export default {
   },
   mounted(){
     //当接收到init时，会执行getInit方法
-    window.EvnetBus.$on('systeminit',this.getInit)
+    EventBus.$on('systeminit',this.getInit)
   },
   beforeDestroy(){
     //进入beforeDestroy这个生命周期时，取消接收init
-    window.EvnetBus.$off('systeminit')
+    window.EventBus.$off('systeminit')
   },
   methods:{
     getInit(res){

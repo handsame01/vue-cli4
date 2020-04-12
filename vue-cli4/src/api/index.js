@@ -8,7 +8,7 @@ function getIndex () {
                 Authorization: oauth
             }}).then(res=>{
                 //将事件分发出去
-        window.EvnetBus.$emit('systeminit',res)
+        EventBus.$emit('systeminit',res)
     })
 }
 //post请求示例
@@ -20,7 +20,7 @@ function postint(code){
         Authorization: oauth
     }}).then(res=>{
         //将事件分发出去
-        window.EvnetBus.$emit('post',res)
+        EventBus.$emit('post',res)
     })
 }
 //将方法暴露出去
