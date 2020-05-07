@@ -8,7 +8,7 @@ axios.defaults.baseURL = HOST;
 window.axios = axios;
 // window.HOST = HOST;
 Vue.config.productionTip = false
-// var EventBus=window.EventBus
+window.EventBus=new Vue()
 // console.log(EventBus)
 new Vue({
   router,
